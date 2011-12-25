@@ -8,4 +8,4 @@ Locative flash fiction is a brief story that is tied to specific location, such 
 
 ## Dependencies and included open source software
 
-This includes code from the (GHSidebarNav project)[https://github.com/gresrun/GHSidebarNav].
+This includes code from the [GHSidebarNav project](https://github.com/gresrun/GHSidebarNav).
