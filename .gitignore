@@ -1,0 +1,4 @@
+**.DS_Store
+build
+StretchyHead.xcodeproj/project.xcworkspace/*
+StretchyHead.xcodeproj/xcuserdata/*

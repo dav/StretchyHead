@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5702D61F14A7A94E0087371D /* GHSidebarMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C2970E14A6B68800097C35 /* GHSidebarMenuCell.m */; };
+		5702D62014A7A94E0087371D /* GHSidebarSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C2971014A6B68800097C35 /* GHSidebarSearchViewController.m */; };
+		5702D62114A7A94E0087371D /* GHSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C2971214A6B68800097C35 /* GHSidebarViewController.m */; };
+		5702D62214A7A94E0087371D /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 572C38A514A0508D007EFD9B /* StoryViewController.m */; };
+		5702D62314A7A94E0087371D /* FSQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C2972314A6BF2700097C35 /* FSQViewController.m */; };
+		5702D62414A7A94E0087371D /* StoryPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AB9BEA14A6F9FD005303F0 /* StoryPageViewController.m */; };
+		5702D62514A7A94E0087371D /* StoriesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AB9BF614A770CF005303F0 /* StoriesManager.m */; };
+		5702D62614A7A94E0087371D /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AB9BF914A7719D005303F0 /* Story.m */; };
+		5702D62714A7A94E0087371D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 572C38A214A0508D007EFD9B /* AppDelegate.m */; };
+		5702D62814A7A94E0087371D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 572C389E14A0508D007EFD9B /* main.m */; };
+		572C389314A0508C007EFD9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572C389214A0508C007EFD9B /* UIKit.framework */; };
+		572C389514A0508C007EFD9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572C389414A0508C007EFD9B /* Foundation.framework */; };
+		572C389714A0508C007EFD9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572C389614A0508C007EFD9B /* CoreGraphics.framework */; };
+		572C38A914A0508D007EFD9B /* StoryViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572C38A714A0508D007EFD9B /* StoryViewController_iPhone.xib */; };
+		57AB9BED14A6F9FD005303F0 /* StoryPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AB9BEB14A6F9FD005303F0 /* StoryPageViewController.xib */; };
+		57C2971714A6B70700097C35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C2971614A6B70700097C35 /* QuartzCore.framework */; };
+		57C2971F14A6B9F500097C35 /* searchBarBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C2971D14A6B9F500097C35 /* searchBarBG.png */; };
+		57C2972014A6B9F500097C35 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C2971E14A6B9F500097C35 /* user.png */; };
+		57C2972614A6BF2700097C35 /* FSQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57C2972414A6BF2700097C35 /* FSQViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		572C388E14A0508C007EFD9B /* StretchyHead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StretchyHead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		572C389214A0508C007EFD9B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		572C389414A0508C007EFD9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		572C389614A0508C007EFD9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		572C389A14A0508D007EFD9B /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		572C389E14A0508D007EFD9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StretchyHead/main.m; sourceTree = SOURCE_ROOT; };
+		572C38A014A0508D007EFD9B /* StretchyHead-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StretchyHead-Prefix.pch"; sourceTree = "<group>"; };
+		572C38A114A0508D007EFD9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		572C38A214A0508D007EFD9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		572C38A414A0508D007EFD9B /* StoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		572C38A514A0508D007EFD9B /* StoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		572C38A814A0508D007EFD9B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StoryViewController_iPhone.xib; sourceTree = "<group>"; };
+		57AB9BE914A6F9FD005303F0 /* StoryPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryPageViewController.h; sourceTree = "<group>"; };
+		57AB9BEA14A6F9FD005303F0 /* StoryPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryPageViewController.m; sourceTree = "<group>"; };
+		57AB9BEB14A6F9FD005303F0 /* StoryPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryPageViewController.xib; sourceTree = "<group>"; };
+		57AB9BF514A770CF005303F0 /* StoriesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesManager.h; sourceTree = "<group>"; };
+		57AB9BF614A770CF005303F0 /* StoriesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesManager.m; sourceTree = "<group>"; };
+		57AB9BF814A7719D005303F0 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		57AB9BF914A7719D005303F0 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		57C2970D14A6B68800097C35 /* GHSidebarMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSidebarMenuCell.h; sourceTree = "<group>"; };
+		57C2970E14A6B68800097C35 /* GHSidebarMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSidebarMenuCell.m; sourceTree = "<group>"; };
+		57C2970F14A6B68800097C35 /* GHSidebarSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSidebarSearchViewController.h; sourceTree = "<group>"; };
+		57C2971014A6B68800097C35 /* GHSidebarSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSidebarSearchViewController.m; sourceTree = "<group>"; };
+		57C2971114A6B68800097C35 /* GHSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSidebarViewController.h; sourceTree = "<group>"; };
+		57C2971214A6B68800097C35 /* GHSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSidebarViewController.m; sourceTree = "<group>"; };
+		57C2971614A6B70700097C35 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		57C2971D14A6B9F500097C35 /* searchBarBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBarBG.png; sourceTree = "<group>"; };
+		57C2971E14A6B9F500097C35 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		57C2972214A6BF2700097C35 /* FSQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSQViewController.h; sourceTree = "<group>"; };
+		57C2972314A6BF2700097C35 /* FSQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSQViewController.m; sourceTree = "<group>"; };
+		57C2972414A6BF2700097C35 /* FSQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSQViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		572C388B14A0508C007EFD9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C2971714A6B70700097C35 /* QuartzCore.framework in Frameworks */,
+				572C389314A0508C007EFD9B /* UIKit.framework in Frameworks */,
+				572C389514A0508C007EFD9B /* Foundation.framework in Frameworks */,
+				572C389714A0508C007EFD9B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		572C388314A0508C007EFD9B = {
+			isa = PBXGroup;
+			children = (
+				572C389814A0508C007EFD9B /* StretchyHead */,
+				572C389114A0508C007EFD9B /* Frameworks */,
+				572C388F14A0508C007EFD9B /* Products */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		572C388F14A0508C007EFD9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				572C388E14A0508C007EFD9B /* StretchyHead.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		572C389114A0508C007EFD9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57C2971614A6B70700097C35 /* QuartzCore.framework */,
+				572C389214A0508C007EFD9B /* UIKit.framework */,
+				572C389414A0508C007EFD9B /* Foundation.framework */,
+				572C389614A0508C007EFD9B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		572C389814A0508C007EFD9B /* StretchyHead */ = {
+			isa = PBXGroup;
+			children = (
+				57C2970B14A6B62F00097C35 /* GHSidebarNav */,
+				57C2972114A6BED300097C35 /* UI */,
+				57AB9BF414A7706E005303F0 /* Util */,
+				572C38A114A0508D007EFD9B /* AppDelegate.h */,
+				572C38A214A0508D007EFD9B /* AppDelegate.m */,
+				572C389914A0508D007EFD9B /* Supporting Files */,
+			);
+			path = StretchyHead;
+			sourceTree = "<group>";
+		};
+		572C389914A0508D007EFD9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				572C389A14A0508D007EFD9B /* en.lproj */,
+				572C389E14A0508D007EFD9B /* main.m */,
+				572C38A014A0508D007EFD9B /* StretchyHead-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57AB9BF414A7706E005303F0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				57AB9BF514A770CF005303F0 /* StoriesManager.h */,
+				57AB9BF614A770CF005303F0 /* StoriesManager.m */,
+				57AB9BF814A7719D005303F0 /* Story.h */,
+				57AB9BF914A7719D005303F0 /* Story.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		57C2970B14A6B62F00097C35 /* GHSidebarNav */ = {
+			isa = PBXGroup;
+			children = (
+				57C2971C14A6B9F500097C35 /* Images */,
+				57C2970D14A6B68800097C35 /* GHSidebarMenuCell.h */,
+				57C2970E14A6B68800097C35 /* GHSidebarMenuCell.m */,
+				57C2970F14A6B68800097C35 /* GHSidebarSearchViewController.h */,
+				57C2971014A6B68800097C35 /* GHSidebarSearchViewController.m */,
+				57C2971114A6B68800097C35 /* GHSidebarViewController.h */,
+				57C2971214A6B68800097C35 /* GHSidebarViewController.m */,
+			);
+			path = GHSidebarNav;
+			sourceTree = "<group>";
+		};
+		57C2971C14A6B9F500097C35 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				57C2971D14A6B9F500097C35 /* searchBarBG.png */,
+				57C2971E14A6B9F500097C35 /* user.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		57C2972114A6BED300097C35 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				572C38A414A0508D007EFD9B /* StoryViewController.h */,
+				572C38A514A0508D007EFD9B /* StoryViewController.m */,
+				572C38A714A0508D007EFD9B /* StoryViewController_iPhone.xib */,
+				57C2972214A6BF2700097C35 /* FSQViewController.h */,
+				57C2972314A6BF2700097C35 /* FSQViewController.m */,
+				57C2972414A6BF2700097C35 /* FSQViewController.xib */,
+				57AB9BE914A6F9FD005303F0 /* StoryPageViewController.h */,
+				57AB9BEA14A6F9FD005303F0 /* StoryPageViewController.m */,
+				57AB9BEB14A6F9FD005303F0 /* StoryPageViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		572C388D14A0508C007EFD9B /* StretchyHead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572C38AF14A0508D007EFD9B /* Build configuration list for PBXNativeTarget "StretchyHead" */;
+			buildPhases = (
+				572C388A14A0508C007EFD9B /* Sources */,
+				572C388B14A0508C007EFD9B /* Frameworks */,
+				572C388C14A0508C007EFD9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StretchyHead;
+			productName = SketchyHead;
+			productReference = 572C388E14A0508C007EFD9B /* StretchyHead.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		572C388514A0508C007EFD9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 572C388814A0508C007EFD9B /* Build configuration list for PBXProject "StretchyHead" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 572C388314A0508C007EFD9B;
+			productRefGroup = 572C388F14A0508C007EFD9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				572C388D14A0508C007EFD9B /* StretchyHead */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		572C388C14A0508C007EFD9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572C38A914A0508D007EFD9B /* StoryViewController_iPhone.xib in Resources */,
+				57C2971F14A6B9F500097C35 /* searchBarBG.png in Resources */,
+				57C2972014A6B9F500097C35 /* user.png in Resources */,
+				57C2972614A6BF2700097C35 /* FSQViewController.xib in Resources */,
+				57AB9BED14A6F9FD005303F0 /* StoryPageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		572C388A14A0508C007EFD9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5702D61F14A7A94E0087371D /* GHSidebarMenuCell.m in Sources */,
+				5702D62014A7A94E0087371D /* GHSidebarSearchViewController.m in Sources */,
+				5702D62114A7A94E0087371D /* GHSidebarViewController.m in Sources */,
+				5702D62214A7A94E0087371D /* StoryViewController.m in Sources */,
+				5702D62314A7A94E0087371D /* FSQViewController.m in Sources */,
+				5702D62414A7A94E0087371D /* StoryPageViewController.m in Sources */,
+				5702D62514A7A94E0087371D /* StoriesManager.m in Sources */,
+				5702D62614A7A94E0087371D /* Story.m in Sources */,
+				5702D62714A7A94E0087371D /* AppDelegate.m in Sources */,
+				5702D62814A7A94E0087371D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		572C38A714A0508D007EFD9B /* StoryViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				572C38A814A0508D007EFD9B /* en */,
+			);
+			name = StoryViewController_iPhone.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		572C38AD14A0508D007EFD9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		572C38AE14A0508D007EFD9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		572C38B014A0508D007EFD9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StretchyHead/StretchyHead-Prefix.pch";
+				INFOPLIST_FILE = "StretchyHead/StretchyHead-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = StretchyHead;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		572C38B114A0508D007EFD9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StretchyHead/StretchyHead-Prefix.pch";
+				INFOPLIST_FILE = "StretchyHead/StretchyHead-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = StretchyHead;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		572C388814A0508C007EFD9B /* Build configuration list for PBXProject "StretchyHead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572C38AD14A0508D007EFD9B /* Debug */,
+				572C38AE14A0508D007EFD9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572C38AF14A0508D007EFD9B /* Build configuration list for PBXNativeTarget "StretchyHead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572C38B014A0508D007EFD9B /* Debug */,
+				572C38B114A0508D007EFD9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 572C388514A0508C007EFD9B /* Project object */;
+}
