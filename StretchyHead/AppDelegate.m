@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "AppController.h"
 #import "GHSidebarViewController.h"
+#import "BZFoursquare.h"
 #import "StoryViewController.h"
 #import "FSQViewController.h"
 #import "StoriesManager.h"
@@ -83,6 +85,14 @@
    See also applicationDidEnterBackground:.
    */
 }
+
+- (BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+//  UINavigationController *navigationController = (UINavigationController *)window_.rootViewController;
+//  FSQMasterViewController *masterViewController = [navigationController.viewControllers objectAtIndex:0];
+  BZFoursquare *foursquare = [AppController sharedInstance].foursquare;
+  return [foursquare handleOpenURL:url];
+}
+
 
 #pragma mark -
 

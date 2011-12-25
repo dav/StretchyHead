@@ -1,0 +1,15 @@
+//
+//  FoursquarePrivate.h
+//  StretchyHead
+//
+//  Created by dav on 12/25/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
+#ifndef StretchyHead_FoursquarePrivate_h
+#define StretchyHead_FoursquarePrivate_h
+
+#define FOURSQUARE_CLIENT_ID @"some_id"
+#define FOURSQUARE_CLIENT_SECRET @"some_secret"
+
+#endif

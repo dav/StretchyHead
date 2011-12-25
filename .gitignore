@@ -2,3 +2,4 @@
 build
 StretchyHead.xcodeproj/project.xcworkspace/*
 StretchyHead.xcodeproj/xcuserdata/*
+StretchyHead/BZFoursquare/FoursquarePrivate.h

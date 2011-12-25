@@ -22,6 +22,10 @@
 		572C389714A0508C007EFD9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572C389614A0508C007EFD9B /* CoreGraphics.framework */; };
 		572C38A914A0508D007EFD9B /* StoryViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572C38A714A0508D007EFD9B /* StoryViewController_iPhone.xib */; };
 		57AB9BED14A6F9FD005303F0 /* StoryPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AB9BEB14A6F9FD005303F0 /* StoryPageViewController.xib */; };
+		57B5EE2414A7AE2700ABFFB0 /* BZFoursquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B5EE2114A7AE2700ABFFB0 /* BZFoursquare.m */; };
+		57B5EE2514A7AE2700ABFFB0 /* BZFoursquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B5EE2314A7AE2700ABFFB0 /* BZFoursquareRequest.m */; };
+		57B5EE2714A7AE4E00ABFFB0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B5EE2614A7AE4E00ABFFB0 /* MobileCoreServices.framework */; };
+		57B5EE2E14A7B8EB00ABFFB0 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B5EE2D14A7B8EB00ABFFB0 /* AppController.m */; };
 		57C2971714A6B70700097C35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C2971614A6B70700097C35 /* QuartzCore.framework */; };
 		57C2971F14A6B9F500097C35 /* searchBarBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C2971D14A6B9F500097C35 /* searchBarBG.png */; };
 		57C2972014A6B9F500097C35 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C2971E14A6B9F500097C35 /* user.png */; };
@@ -48,6 +52,14 @@
 		57AB9BF614A770CF005303F0 /* StoriesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesManager.m; sourceTree = "<group>"; };
 		57AB9BF814A7719D005303F0 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
 		57AB9BF914A7719D005303F0 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		57B5EE2014A7AE2700ABFFB0 /* BZFoursquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquare.h; sourceTree = "<group>"; };
+		57B5EE2114A7AE2700ABFFB0 /* BZFoursquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquare.m; sourceTree = "<group>"; };
+		57B5EE2214A7AE2700ABFFB0 /* BZFoursquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquareRequest.h; sourceTree = "<group>"; };
+		57B5EE2314A7AE2700ABFFB0 /* BZFoursquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquareRequest.m; sourceTree = "<group>"; };
+		57B5EE2614A7AE4E00ABFFB0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		57B5EE2C14A7B8EB00ABFFB0 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		57B5EE2D14A7B8EB00ABFFB0 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		57B5EE2F14A7B9ED00ABFFB0 /* FoursquarePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquarePrivate.h; sourceTree = "<group>"; };
 		57C2970D14A6B68800097C35 /* GHSidebarMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSidebarMenuCell.h; sourceTree = "<group>"; };
 		57C2970E14A6B68800097C35 /* GHSidebarMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSidebarMenuCell.m; sourceTree = "<group>"; };
 		57C2970F14A6B68800097C35 /* GHSidebarSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSidebarSearchViewController.h; sourceTree = "<group>"; };
@@ -67,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B5EE2714A7AE4E00ABFFB0 /* MobileCoreServices.framework in Frameworks */,
 				57C2971714A6B70700097C35 /* QuartzCore.framework in Frameworks */,
 				572C389314A0508C007EFD9B /* UIKit.framework in Frameworks */,
 				572C389514A0508C007EFD9B /* Foundation.framework in Frameworks */,
@@ -80,6 +93,7 @@
 		572C388314A0508C007EFD9B = {
 			isa = PBXGroup;
 			children = (
+				57B5EE2614A7AE4E00ABFFB0 /* MobileCoreServices.framework */,
 				572C389814A0508C007EFD9B /* StretchyHead */,
 				572C389114A0508C007EFD9B /* Frameworks */,
 				572C388F14A0508C007EFD9B /* Products */,
@@ -109,6 +123,7 @@
 		572C389814A0508C007EFD9B /* StretchyHead */ = {
 			isa = PBXGroup;
 			children = (
+				57B5EE1F14A7AE2700ABFFB0 /* BZFoursquare */,
 				57C2970B14A6B62F00097C35 /* GHSidebarNav */,
 				57C2972114A6BED300097C35 /* UI */,
 				57AB9BF414A7706E005303F0 /* Util */,
@@ -136,8 +151,22 @@
 				57AB9BF614A770CF005303F0 /* StoriesManager.m */,
 				57AB9BF814A7719D005303F0 /* Story.h */,
 				57AB9BF914A7719D005303F0 /* Story.m */,
+				57B5EE2C14A7B8EB00ABFFB0 /* AppController.h */,
+				57B5EE2D14A7B8EB00ABFFB0 /* AppController.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		57B5EE1F14A7AE2700ABFFB0 /* BZFoursquare */ = {
+			isa = PBXGroup;
+			children = (
+				57B5EE2F14A7B9ED00ABFFB0 /* FoursquarePrivate.h */,
+				57B5EE2014A7AE2700ABFFB0 /* BZFoursquare.h */,
+				57B5EE2114A7AE2700ABFFB0 /* BZFoursquare.m */,
+				57B5EE2214A7AE2700ABFFB0 /* BZFoursquareRequest.h */,
+				57B5EE2314A7AE2700ABFFB0 /* BZFoursquareRequest.m */,
+			);
+			path = BZFoursquare;
 			sourceTree = "<group>";
 		};
 		57C2970B14A6B62F00097C35 /* GHSidebarNav */ = {
@@ -254,6 +283,9 @@
 				5702D62614A7A94E0087371D /* Story.m in Sources */,
 				5702D62714A7A94E0087371D /* AppDelegate.m in Sources */,
 				5702D62814A7A94E0087371D /* main.m in Sources */,
+				57B5EE2414A7AE2700ABFFB0 /* BZFoursquare.m in Sources */,
+				57B5EE2514A7AE2700ABFFB0 /* BZFoursquareRequest.m in Sources */,
+				57B5EE2E14A7B8EB00ABFFB0 /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
