@@ -7,6 +7,7 @@
 //
 
 #import "FSQViewController.h"
+#import "AppController.h"
 
 #pragma mark Private Interface
 @interface FSQViewController ()
@@ -31,6 +32,14 @@
 	((void (^)()) _revealBlock)();
 }
 
+- (IBAction) buttonTapped:(id)sender {
+  if (![[AppController sharedInstance].foursquare isSessionValid]) {
+    [[AppController sharedInstance].foursquare startAuthorization];
+  } else {
+    [[AppController sharedInstance].foursquare invalidateSession];
+  }
+}
+
 #pragma mark -
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -52,10 +61,17 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+  if (![[AppController sharedInstance].foursquare isSessionValid]) {
+    [_fsqButton setTitle:NSLocalizedString(@"Obtain Access Token", @"") forState:UIControlStateNormal];
+  } else {
+    [_fsqButton setTitle:NSLocalizedString(@"Forget Access Token", @"") forState:UIControlStateNormal];
+  }
 }
 
 - (void)viewDidUnload

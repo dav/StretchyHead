@@ -16,6 +16,8 @@ SINGLETON_IMPLEMENTATION(AppController)
 @property (nonatomic,copy) NSDictionary *fsqMeta;
 @property (nonatomic,copy) NSArray *fsqNotifications;
 @property (nonatomic,copy) NSDictionary *fsqResponse;
+- (void) cancelRequest;
+- (void) prepareForRequest;
 @end
 
 @implementation AppController
@@ -30,6 +32,14 @@ SINGLETON_IMPLEMENTATION(AppController)
   self = [super init];
   if (self) {
     _foursquare = [[BZFoursquare alloc] initWithClientID:FOURSQUARE_CLIENT_ID callbackURL:@"stretchyhead://foursquare"];
+    _foursquare.version = @"20111119";
+    _foursquare.locale = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
+    _foursquare.sessionDelegate = self;
+    
+    NSString* storedAccessToken = [[NSUserDefaults standardUserDefaults] valueForKey:@"FSQAT"];
+    if (storedAccessToken) {
+      _foursquare.accessToken = storedAccessToken;
+    }
   }
   return self;
 }
@@ -40,15 +50,33 @@ SINGLETON_IMPLEMENTATION(AppController)
 }
 
 #pragma mark -
+#pragma mark Foursquare Private Methods
+
+- (void)cancelRequest {
+  if (_fsqRequest) {
+    _fsqRequest.delegate = nil;
+    [_fsqRequest cancel];
+    self.fsqRequest = nil;
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+  }
+}
+
+- (void)prepareForRequest {
+  [self cancelRequest];
+  self.fsqMeta = nil;
+  self.fsqNotifications = nil;
+  self.fsqResponse = nil;
+}
+
+#pragma mark -
 #pragma mark BZFoursquareRequestDelegate
 
 - (void)requestDidFinishLoading:(BZFoursquareRequest *)request {
-  NSLog(@"%@: %@", __PRETTY_FUNCTION__, request);
+  NSLog(@"%s: %@", __PRETTY_FUNCTION__, request);
   self.fsqMeta = request.meta;
   self.fsqNotifications = request.notifications;
   self.fsqResponse = request.response;
   self.fsqRequest = nil;
-//  [self updateView];
   [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
@@ -60,7 +88,6 @@ SINGLETON_IMPLEMENTATION(AppController)
   self.fsqNotifications = request.notifications;
   self.fsqResponse = request.response;
   self.fsqRequest = nil;
-//  [self updateView];
   [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
@@ -68,14 +95,20 @@ SINGLETON_IMPLEMENTATION(AppController)
 #pragma mark BZFoursquareSessionDelegate
 
 - (void)foursquareDidAuthorize:(BZFoursquare *)foursquare {
-  NSLog(@"%@: %@", __PRETTY_FUNCTION__, foursquare);
-////  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:kAccessTokenRow inSection:kAuthenticationSection];
-//  NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
-//  [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+  NSLog(@"%s: %@", __PRETTY_FUNCTION__, foursquare);
+  
+  // TODO store to secure keychain before production release
+  [[NSUserDefaults standardUserDefaults] setValue:foursquare.accessToken forKey:@"FSQAT"];
+  [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)foursquareDidNotAuthorize:(BZFoursquare *)foursquare error:(NSDictionary *)errorInfo {
   NSLog(@"%s: %@", __PRETTY_FUNCTION__, errorInfo);
+  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Foursquare Error" message:[errorInfo objectForKey:@"errorDetail"] delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"") otherButtonTitles:nil];
+  [alertView show];
+
 }
+
+
 
 @end
